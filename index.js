@@ -138,4 +138,14 @@ $(function() {
 
     anim_id = requestAnimationFrame(repeat);
   }
+
+  function car_down(car) {
+    var car_current_top = parseInt(car.css("top"));
+    if (car_current_top > container_height) {
+      car_current_top = -200;
+      var car_left = parseInt(Math.random() * (container_width - car_width));
+      car.css("left", car_left);
+    }
+    car.css("top", car_current_top + speed);
+  }
 });
