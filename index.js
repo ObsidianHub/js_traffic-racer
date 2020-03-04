@@ -51,4 +51,23 @@ $(function() {
       }
     }
   });
+
+  $(document).on("keyup", function(e) {
+    if (game_over === false) {
+      var key = e.keyCode;
+      if (key === 37) {
+        cancelAnimationFrame(move_left);
+        move_left = false;
+      } else if (key === 39) {
+        cancelAnimationFrame(move_right);
+        move_right = false;
+      } else if (key === 38) {
+        cancelAnimationFrame(move_up);
+        move_up = false;
+      } else if (key === 40) {
+        cancelAnimationFrame(move_down);
+        move_down = false;
+      }
+    }
+  });
 });
