@@ -172,4 +172,12 @@ $(function() {
     restart_btn.focus();
     setHighScore();
   }
+
+  function setHighScore() {
+    if (high_score < parseInt(score.text())) {
+      high_score = parseInt(score.text());
+      localStorage.setItem("high_score", parseInt(score.text()));
+    }
+    $("#high_score").text(high_score);
+  }
 });
