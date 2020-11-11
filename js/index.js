@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   var anim_id;
 
   //saving dom objects to variables
@@ -37,7 +37,7 @@ $(function() {
   var move_down = false;
 
   /* Move the cars */
-  $(document).on("keydown", function(e) {
+  $(document).on("keydown", function (e) {
     if (game_over === false) {
       var key = e.keyCode;
       if (key === 37 && move_left === false) {
@@ -52,7 +52,7 @@ $(function() {
     }
   });
 
-  $(document).on("keyup", function(e) {
+  $(document).on("keyup", function (e) {
     if (game_over === false) {
       var key = e.keyCode;
       if (key === 37) {
@@ -157,7 +157,7 @@ $(function() {
     line.css("top", line_current_top + line_speed);
   }
 
-  restart_btn.click(function() {
+  restart_btn.click(function () {
     location.reload();
   });
 
