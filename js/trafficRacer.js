@@ -22,4 +22,17 @@ $(function () {
   var container_height = parseInt(container.height());
   var car_width = parseInt(car.width());
   var car_height = parseInt(car.height());
+
+  //some other declarations
+  var game_over = false;
+
+  var score_counter = 1;
+
+  var speed = 2;
+  var line_speed = 5;
+
+  var move_right = false;
+  var move_left = false;
+  var move_up = false;
+  var move_down = false;
 });
