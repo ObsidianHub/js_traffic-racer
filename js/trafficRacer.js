@@ -15,4 +15,11 @@ $(function () {
   var score = $("#score");
   var high_score = localStorage.getItem("high_score");
   $("#high_score").text(high_score);
+
+  //saving some initial setup
+  var container_left = parseInt(container.css("left"));
+  var container_width = parseInt(container.width());
+  var container_height = parseInt(container.height());
+  var car_width = parseInt(car.width());
+  var car_height = parseInt(car.height());
 });
