@@ -94,4 +94,14 @@ $(function () {
       move_up = requestAnimationFrame(up);
     }
   }
+
+  function down() {
+    if (
+      game_over === false &&
+      parseInt(car.css("top")) < container_height - car_height
+    ) {
+      car.css("top", parseInt(car.css("top")) + 3);
+      move_down = requestAnimationFrame(down);
+    }
+  }
 });
