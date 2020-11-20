@@ -70,4 +70,11 @@ $(function () {
       }
     }
   });
+
+  function left() {
+    if (game_over === false && parseInt(car.css("left")) > 0) {
+      car.css("left", parseInt(car.css("left")) - 5);
+      move_left = requestAnimationFrame(left);
+    }
+  }
 });
