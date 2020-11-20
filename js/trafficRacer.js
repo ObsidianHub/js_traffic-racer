@@ -154,6 +154,10 @@ $(function () {
     line.css("top", line_current_top + line_speed);
   }
 
+  restart_btn.click(function () {
+    location.reload();
+  });
+
   function stop_the_game() {
     game_over = true;
     cancelAnimationFrame(anim_id);
