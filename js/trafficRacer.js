@@ -17,7 +17,6 @@ $(function () {
   $("#high_score").text(high_score);
 
   //saving some initial setup
-  let container_left = parseInt(container.css("left"));
   let container_width = parseInt(container.width());
   let container_height = parseInt(container.height());
   let car_width = parseInt(car.width());
