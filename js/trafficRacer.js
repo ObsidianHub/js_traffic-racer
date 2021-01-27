@@ -105,6 +105,8 @@ $(function () {
     }
   }
 
+  anim_id = requestAnimationFrame(repeat);
+
   function repeat() {
     if (
       collision(car, car_1) ||
